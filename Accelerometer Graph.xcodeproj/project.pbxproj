@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0F4510EF1FA00FE300E9AE4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4510EE1FA00FE300E9AE4B /* AppDelegate.m */; };
-		0F4510F21FA00FE300E9AE4B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4510F11FA00FE300E9AE4B /* ViewController.m */; };
+		0F4510F21FA00FE300E9AE4B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4510F11FA00FE300E9AE4B /* MainViewController.m */; };
 		0F4510F51FA00FE300E9AE4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4510F31FA00FE300E9AE4B /* Main.storyboard */; };
 		0F4510F71FA00FE300E9AE4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4510F61FA00FE300E9AE4B /* Assets.xcassets */; };
 		0F4510FA1FA00FE300E9AE4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4510F81FA00FE300E9AE4B /* LaunchScreen.storyboard */; };
 		0F4510FD1FA00FE300E9AE4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4510FC1FA00FE300E9AE4B /* main.m */; };
+		0F4511071FA0106B00E9AE4B /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4511041FA0106A00E9AE4B /* GraphView.m */; };
+		0F4511081FA0106B00E9AE4B /* AccelerometerFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4511051FA0106A00E9AE4B /* AccelerometerFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F4510EA1FA00FE300E9AE4B /* Accelerometer Graph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accelerometer Graph.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4510ED1FA00FE300E9AE4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F4510EE1FA00FE300E9AE4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0F4510F01FA00FE300E9AE4B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0F4510F11FA00FE300E9AE4B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0F4510F01FA00FE300E9AE4B /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0F4510F11FA00FE300E9AE4B /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		0F4510F41FA00FE300E9AE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F4510F61FA00FE300E9AE4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F4510F91FA00FE300E9AE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F4510FB1FA00FE300E9AE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F4510FC1FA00FE300E9AE4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F4511031FA0106A00E9AE4B /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		0F4511041FA0106A00E9AE4B /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		0F4511051FA0106A00E9AE4B /* AccelerometerFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerFilter.m; sourceTree = "<group>"; };
+		0F4511061FA0106B00E9AE4B /* AccelerometerFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerFilter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,45 @@
 		0F4510EC1FA00FE300E9AE4B /* Accelerometer Graph */ = {
 			isa = PBXGroup;
 			children = (
-				0F4510ED1FA00FE300E9AE4B /* AppDelegate.h */,
-				0F4510EE1FA00FE300E9AE4B /* AppDelegate.m */,
-				0F4510F01FA00FE300E9AE4B /* ViewController.h */,
-				0F4510F11FA00FE300E9AE4B /* ViewController.m */,
+				0F4511091FA0106F00E9AE4B /* Class */,
+				0F45110A1FA0107A00E9AE4B /* Support Files */,
+			);
+			path = "Accelerometer Graph";
+			sourceTree = "<group>";
+		};
+		0F4511091FA0106F00E9AE4B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0F45110B1FA0108B00E9AE4B /* Common */,
+				0F4510F01FA00FE300E9AE4B /* MainViewController.h */,
+				0F4510F11FA00FE300E9AE4B /* MainViewController.m */,
+				0F4511061FA0106B00E9AE4B /* AccelerometerFilter.h */,
+				0F4511051FA0106A00E9AE4B /* AccelerometerFilter.m */,
+				0F4511031FA0106A00E9AE4B /* GraphView.h */,
+				0F4511041FA0106A00E9AE4B /* GraphView.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		0F45110A1FA0107A00E9AE4B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F4510FB1FA00FE300E9AE4B /* Info.plist */,
 				0F4510F31FA00FE300E9AE4B /* Main.storyboard */,
 				0F4510F61FA00FE300E9AE4B /* Assets.xcassets */,
 				0F4510F81FA00FE300E9AE4B /* LaunchScreen.storyboard */,
-				0F4510FB1FA00FE300E9AE4B /* Info.plist */,
 				0F4510FC1FA00FE300E9AE4B /* main.m */,
 			);
-			path = "Accelerometer Graph";
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		0F45110B1FA0108B00E9AE4B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0F4510ED1FA00FE300E9AE4B /* AppDelegate.h */,
+				0F4510EE1FA00FE300E9AE4B /* AppDelegate.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F4510F21FA00FE300E9AE4B /* ViewController.m in Sources */,
+				0F4510F21FA00FE300E9AE4B /* MainViewController.m in Sources */,
 				0F4510FD1FA00FE300E9AE4B /* main.m in Sources */,
 				0F4510EF1FA00FE300E9AE4B /* AppDelegate.m in Sources */,
+				0F4511071FA0106B00E9AE4B /* GraphView.m in Sources */,
+				0F4511081FA0106B00E9AE4B /* AccelerometerFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +316,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95VE89RM7W;
-				INFOPLIST_FILE = "Accelerometer Graph/Info.plist";
+				INFOPLIST_FILE = "Accelerometer Graph/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shoujhengduan.Accelerometer-Graph";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,7 +331,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95VE89RM7W;
-				INFOPLIST_FILE = "Accelerometer Graph/Info.plist";
+				INFOPLIST_FILE = "Accelerometer Graph/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shoujhengduan.Accelerometer-Graph";
 				PRODUCT_NAME = "$(TARGET_NAME)";
